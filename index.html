@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Reference</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ═══ HEADER ═══ -->
+<div class="header">
+  <div class="header-inner">
+    <h1 id="headerTitle">Cottage Restoration</h1>
+    <div class="subtitle" id="headerSubtitle">200-Year-Old Yorkshire Stone Cottage — Render Removal, Lime Repointing &amp; Limewash</div>
+    <div class="date-tag" id="headerDate">Started: Feb 2026 · NE England</div>
+  </div>
+</div>
+
+<!-- ═══ PROJECT NAV ═══ -->
+<nav class="project-nav">
+  <div class="project-nav-inner">
+    <a href="#" data-project="cottage" class="active">Cottage Restoration</a>
+    <a href="#" data-project="living-room">Living Room</a>
+  </div>
+</nav>
+
+<!-- ═══ PROGRESS ═══ -->
+<div class="progress-section">
+  <div class="progress-inner">
+    <div class="progress-label">Overall Progress</div>
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    <div class="progress-pct" id="progressPct">0%</div>
+  </div>
+</div>
+
+<!-- ═══ SECTION NAV ═══ -->
+<nav class="section-nav">
+  <div class="section-nav-inner" id="sectionNavInner">
+    <!-- populated by app.js -->
+  </div>
+</nav>
+
+<!-- ═══ MAIN ═══ -->
+<div class="main">
+
+  <!-- ═══════════════════════════════════════════════
+       PROJECT: COTTAGE RESTORATION
+  ════════════════════════════════════════════════ -->
+  <div class="project" id="project-cottage">
+
+    <!-- ─── ORDER OF WORK ─── -->
+    <div class="section" id="cottage-order">
+      <div class="section-header">
+        <div class="section-icon" style="background:var(--amber-light);color:var(--amber);">▶</div>
+        <h2>Order of Work</h2>
+      </div>
+
+      <div class="work-order">
+        <div class="work-step active">
+          <div class="work-step-title">1. Strip cement render</div>
+          <div class="work-step-desc">Work in sections, starting below ground floor window. SDS chisel + hand tools near windows.</div>
+        </div>
+        <div class="work-step">
+          <div class="work-step-title">2. Clean stone faces</div>
+          <div class="work-step-desc">Wire brush and moderate pressure wash (1000–1500 PSI, fan nozzle). Remove all cement residue.</div>
+        </div>
+        <div class="work-step">
+          <div class="work-step-title">3. Remove bitumen at base</div>
+          <div class="work-step-desc">Strip the black coating at ground level — it's sealing moisture in.</div>
+        </div>
+        <div class="work-step">
+          <div class="work-step-title">4. Dig out tarmac &amp; trench for French drain</div>
+          <div class="work-step-desc">Strip tarmac 500–600mm from wall. Trench 300mm+ deep, below internal floor level.</div>
+        </div>
+        <div class="work-step">
+          <div class="work-step-title">5. Install French drain</div>
+          <div class="work-step-desc">Geotextile on outer edge/base. Square guttering at bottom with fall to downhill side. Clean 20mm gravel fill.</div>
+        </div>
+        <div class="work-step">
+          <div class="work-step-title">6. Rake out old mortar</div>
+          <div class="work-step-desc">Remove loose/crumbly mortar to depth of 2× joint width. Leave sound lime mortar in place.</div>
+        </div>
+        <div class="work-step">
+          <div class="work-step-title">7. Repoint with lime (top down)</div>
+          <div class="work-step-desc">NHL 3.5 mortar, 1:2.5–1:3 mix. Damp wall first. Pack firmly. Brush back when thumbprint firm. Cover and mist for 3–5 days.</div>
+        </div>
+        <div class="work-step">
+          <div class="work-step-title">8. Limewash</div>
+          <div class="work-step-desc">Lime putty thinned. 3–5 thin coats on dampened wall. Allow each coat to dry between applications.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── MILESTONES ─── -->
+    <div class="section" id="cottage-milestones">
+      <div class="section-header">
+        <div class="section-icon" style="background:var(--stone-pale);color:var(--mortar);">◆</div>
+        <h2>Milestones &amp; Tasks</h2>
+      </div>
+
+      <!-- MILESTONE 1 -->
+      <div class="milestone open" onclick="this.classList.toggle('open')">
+        <div class="milestone-header">
+          <div class="milestone-number active">1</div>
+          <div class="milestone-title">Render Removal — Below Ground Floor Window</div>
+          <span class="milestone-status status-active">In Progress</span>
+          <div class="milestone-toggle">▾</div>
+        </div>
+        <div class="milestone-body" onclick="event.stopPropagation()">
+          <ul class="task-list">
+            <li class="task done">
+              <div class="task-check">✓</div>
+              <div><div class="task-text">Buy SDS chisel set and safety gear</div>
+              <div class="task-note">Erbauer 3pc set, FFP3 masks, goggles, ear defenders, rubble sacks</div></div>
+            </li>
+            <li class="task done">
+              <div class="task-check">✓</div>
+              <div><div class="task-text">Test patches — expose stone in multiple areas</div>
+              <div class="task-note">Stone in good condition, rubble build, some brick packing — all normal</div></div>
+            </li>
+            <li class="task done">
+              <div class="task-check">✓</div>
+              <div><div class="task-text">Check SDS drill has chisel-only mode (3-function)</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Strip section below ground floor window — right side</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Strip section below ground floor window — left side</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Clean stone faces — brush and wash</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Assess stone condition across full exposed section</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Bag and clear rubble</div></div>
+            </li>
+          </ul>
+
+          <div class="info-grid" style="margin-top:1.2rem;">
+            <div class="info-card tip">
+              <h4>What we've found so far</h4>
+              <ul>
+                <li>Render 15–30mm thick, thicker in hollows</li>
+                <li>Rubble construction with brick packing — normal</li>
+                <li>Old lime mortar mostly sandy/eroded — needs repointing</li>
+                <li>One cracked stone (frost damage) — fill with lime mortar</li>
+                <li>Drill holes from old fixings — fill and forget</li>
+                <li>Render coming away cleanly from stone faces</li>
+              </ul>
+            </div>
+            <div class="info-card warning">
+              <h4>Watch out for</h4>
+              <ul>
+                <li>Use hand tools within 150mm of window frames</li>
+                <li>Cover glass with cardboard/plywood when chiselling nearby</li>
+                <li>Check for hidden cables/pipes before chiselling</li>
+                <li>Don't leave large areas unpointed in wet weather — tarp up</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MILESTONE 2 -->
+      <div class="milestone" onclick="this.classList.toggle('open')">
+        <div class="milestone-header">
+          <div class="milestone-number">2</div>
+          <div class="milestone-title">Render Removal — Rest of Front Elevation</div>
+          <span class="milestone-status status-pending">Pending</span>
+          <div class="milestone-toggle">▾</div>
+        </div>
+        <div class="milestone-body" onclick="event.stopPropagation()">
+          <ul class="task-list">
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Strip between windows (ground floor)</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Strip around door</div>
+              <div class="task-note">Hand tools close to frame</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Strip first floor — scaffold or ladder needed</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Strip around first floor windows</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Inspect all lintels once exposed</div>
+              <div class="task-note">Check for cracks or dropping — structural concern if found</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Full clean of stone faces</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Clear all rubble</div></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- MILESTONE 3 -->
+      <div class="milestone" onclick="this.classList.toggle('open')">
+        <div class="milestone-header">
+          <div class="milestone-number">3</div>
+          <div class="milestone-title">Remove Bitumen &amp; Strip Tarmac</div>
+          <span class="milestone-status status-pending">Pending</span>
+          <div class="milestone-toggle">▾</div>
+        </div>
+        <div class="milestone-body" onclick="event.stopPropagation()">
+          <ul class="task-list">
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Strip bitumen coating from base of wall</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Break out tarmac 500–600mm from wall</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Dig trench 300–400mm wide, 200–300mm deep</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Check trench is below internal floor level</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Dispose of tarmac (not for patio sub-base — may contain tar)</div></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- MILESTONE 4 -->
+      <div class="milestone" onclick="this.classList.toggle('open')">
+        <div class="milestone-header">
+          <div class="milestone-number">4</div>
+          <div class="milestone-title">French Drain Installation</div>
+          <span class="milestone-status status-pending">Pending</span>
+          <div class="milestone-toggle">▾</div>
+        </div>
+        <div class="milestone-body" onclick="event.stopPropagation()">
+          <ul class="task-list">
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Line outer edge and base of trench with geotextile</div>
+              <div class="task-note">Do NOT line the wall side — wall must breathe</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Lay square guttering at base with fall to downhill side</div>
+              <div class="task-note">Min 1:100 fall — approx 40mm over 4m</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Connect discharge pipe at downhill end</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Build soakaway or run to discharge point</div>
+              <div class="task-note">500×500×500mm hole, lined with geotextile, filled with rubble/gravel, 2–3m from building</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Fill trench with clean 20mm gravel</div>
+              <div class="task-note">Leave 20–30mm air gap between gravel and wall face</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Fold geotextile over top of gravel</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Check downpipe discharges — redirect away from building if needed</div></div>
+            </li>
+          </ul>
+
+          <div class="info-grid" style="margin-top:1.2rem;">
+            <div class="info-card note">
+              <h4>French Drain — Key Principles</h4>
+              <ul>
+                <li>NO membrane on the wall — wall must breathe</li>
+                <li>Gravel must be clean, washed 20mm — no fines</li>
+                <li>Fall is critical — water must go somewhere</li>
+                <li>Discharge runs downhill to soakaway or drain</li>
+                <li>Corner junction: mitre gutters or use angle piece</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MILESTONE 5 -->
+      <div class="milestone" onclick="this.classList.toggle('open')">
+        <div class="milestone-header">
+          <div class="milestone-number">5</div>
+          <div class="milestone-title">Lime Repointing</div>
+          <span class="milestone-status status-pending">Pending</span>
+          <div class="milestone-toggle">▾</div>
+        </div>
+        <div class="milestone-body" onclick="event.stopPropagation()">
+          <ul class="task-list">
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Order NHL 3.5 lime and sharp sand</div>
+              <div class="task-note">4–5 × 25kg bags lime. Local sharp sand ideally. Suppliers: Mike Wye, Ty Mawr, Roundtower</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Rake out all loose/crumbly mortar</div>
+              <div class="task-note">Depth: 2× joint width minimum. Leave sound mortar.</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Do a test patch — small area, check colour and finish</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Repoint section by section, working top down</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Aftercare — mist and cover with damp hessian for 3–5 days per section</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Brush back excess when thumbprint firm</div></div>
+            </li>
+          </ul>
+
+          <div class="info-grid" style="margin-top:1.2rem;">
+            <div class="info-card spec">
+              <h4>Mortar Specification</h4>
+              <ul>
+                <li>NHL 3.5 hydraulic lime</li>
+                <li>Ratio: 1:2.5 to 1:3 (lime:sand)</li>
+                <li>Sharp, well-graded, washed sand</li>
+                <li>Can add stone dust for colour match</li>
+                <li>Mix thoroughly, let stand before use</li>
+                <li>Working time: several hours (not like cement)</li>
+              </ul>
+            </div>
+            <div class="info-card warning">
+              <h4>Conditions</h4>
+              <ul>
+                <li>NOT in direct hot sun</li>
+                <li>NOT below 5°C or risk of frost</li>
+                <li>NOT in heavy rain</li>
+                <li>Best months: May–June or Sept–Oct</li>
+                <li>Damp the wall before pointing</li>
+                <li>Keep damp for 3–5 days after</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MILESTONE 6 -->
+      <div class="milestone" onclick="this.classList.toggle('open')">
+        <div class="milestone-header">
+          <div class="milestone-number">6</div>
+          <div class="milestone-title">Limewash</div>
+          <span class="milestone-status status-pending">Pending</span>
+          <div class="milestone-toggle">▾</div>
+        </div>
+        <div class="milestone-body" onclick="event.stopPropagation()">
+          <ul class="task-list">
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Source lime putty for limewash</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Apply 3–5 thin coats</div>
+              <div class="task-note">Dampen wall before each coat. Looks patchy at first — builds up.</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Consider tint with natural pigments if not pure white</div>
+              <div class="task-note">1890s photo shows fairly opaque white limewash</div></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- MILESTONE 7 -->
+      <div class="milestone" onclick="this.classList.toggle('open')">
+        <div class="milestone-header">
+          <div class="milestone-number">7</div>
+          <div class="milestone-title">Checks &amp; Pre-Work</div>
+          <span class="milestone-status status-active">Ongoing</span>
+          <div class="milestone-toggle">▾</div>
+        </div>
+        <div class="milestone-body" onclick="event.stopPropagation()">
+          <ul class="task-list">
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Check if cottage is listed / in conservation area</div>
+              <div class="task-note">Check Historic England website or call council conservation officer</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Check where services enter building (electric, gas, phone)</div>
+              <div class="task-note">Use cable detector before chiselling near service entry points</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Consider asbestos test on render sample</div>
+              <div class="task-note">£20–30 posted to lab. Unlikely but worth checking for 60s/70s render.</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Check pavement licence needed if working above public footpath</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Check where downpipes discharge</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Assess black-painted lintels/sills — strip or leave?</div></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── QUICK REFERENCE ─── -->
+    <div class="section" id="cottage-quickref">
+      <div class="section-header">
+        <div class="section-icon" style="background:var(--blue-light);color:var(--blue-info);">⚡</div>
+        <h2>Quick Reference</h2>
+      </div>
+
+      <table class="ref-table">
+        <thead>
+          <tr><th>Item</th><th>Detail</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="label">Stone type</td><td>Yorkshire sandstone (likely gritstone), warm buff/yellow</td></tr>
+          <tr><td class="label">Wall construction</td><td>Rubble-built, two skins with rubble/mortar core</td></tr>
+          <tr><td class="label">Render type</td><td>Cement, 15–30mm (thicker in hollows), likely applied 1960s–70s</td></tr>
+          <tr><td class="label">Lime mortar</td><td>NHL 3.5, ratio 1:2.5 to 1:3 with sharp sand</td></tr>
+          <tr><td class="label">Limewash</td><td>Lime putty thinned, 3–5 coats on damp wall</td></tr>
+          <tr><td class="label">Pointing depth</td><td>Minimum 2× joint width (e.g. 15mm joint → 30mm deep)</td></tr>
+          <tr><td class="label">Pointing finish</td><td>Slightly recessed or flush — NOT proud of stone face</td></tr>
+          <tr><td class="label">Pointing conditions</td><td>5–25°C, no frost, no hot sun, no heavy rain. May–Jun or Sep–Oct best.</td></tr>
+          <tr><td class="label">Aftercare</td><td>Mist 2×/day + damp hessian for 3–5 days</td></tr>
+          <tr><td class="label">Pressure washer</td><td>1000–1500 PSI max, fan nozzle, keep moving</td></tr>
+          <tr><td class="label">French drain gravel</td><td>Clean washed 20mm — no fines, no limestone</td></tr>
+          <tr><td class="label">French drain fall</td><td>Minimum 1:100 (40mm over 4m run)</td></tr>
+          <tr><td class="label">Trench dimensions</td><td>300–400mm wide, 200–300mm deep, 500–600mm from wall</td></tr>
+          <tr><td class="label">Drying time after work</td><td>Wall may take 6–12 months to fully dry out inside</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ─── MATERIALS & MIX ─── -->
+    <div class="section" id="cottage-materials">
+      <div class="section-header">
+        <div class="section-icon" style="background:var(--amber-light);color:var(--amber);">▣</div>
+        <h2>Materials &amp; Mix Ratios</h2>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card spec">
+          <h4>Pointing Mortar</h4>
+          <ul>
+            <li><strong>Lime:</strong> NHL 3.5 (Secil, St Astier, or Singleton Birch)</li>
+            <li><strong>Sand:</strong> Sharp, well-graded, washed, coarse</li>
+            <li><strong>Ratio:</strong> 1 part lime : 2.5–3 parts sand</li>
+            <li><strong>Quantity:</strong> 4–5 × 25kg bags lime for front elevation</li>
+            <li><strong>Optional:</strong> Stone dust or coarse grit for colour match</li>
+          </ul>
+        </div>
+        <div class="info-card spec">
+          <h4>Limewash</h4>
+          <ul>
+            <li><strong>Base:</strong> Lime putty (NOT NHL powder)</li>
+            <li><strong>Mix:</strong> Thin with water to milk-like consistency</li>
+            <li><strong>Coats:</strong> 3–5 thin coats minimum</li>
+            <li><strong>Tint:</strong> Natural pigments if desired (historically off-white/cream)</li>
+            <li><strong>Application:</strong> Dampen wall, apply thin, let dry between coats</li>
+          </ul>
+        </div>
+        <div class="info-card note">
+          <h4>French Drain Materials</h4>
+          <ul>
+            <li>Square plastic guttering (4m+)</li>
+            <li>Joints, end cap, square-to-round adapter</li>
+            <li>Geotextile membrane</li>
+            <li>Clean 20mm washed gravel (2 bulk bags)</li>
+            <li>Solid pipe for discharge run</li>
+          </ul>
+        </div>
+        <div class="info-card note">
+          <h4>Lime Suppliers (deliver to NE)</h4>
+          <ul>
+            <li><strong>Mike Wye</strong> — mikewye.co.uk</li>
+            <li><strong>Ty Mawr</strong> — lime.org.uk</li>
+            <li><strong>Roundtower</strong> — roundtowerlime.com</li>
+            <li>All offer advice on the right mix — worth a phone call</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── SHOPPING LIST ─── -->
+    <div class="section" id="cottage-shopping">
+      <div class="section-header">
+        <div class="section-icon" style="background:var(--green-light);color:var(--green-done);">£</div>
+        <h2>Shopping List — Render Stripping Kit</h2>
+      </div>
+
+      <div class="shop-item">
+        <div>Erbauer SDS Plus Chisel Set 3pc <a href="https://www.screwfix.com/p/erbauer-sds-plus-shank-chisel-set-3-pieces/123vg" target="_blank">Screwfix →</a></div>
+        <div class="shop-price">£11.99</div>
+      </div>
+      <div class="shop-item">
+        <div>DeWalt FFP3 Valved Masks 5 Pack <a href="https://www.screwfix.com/p/dewalt-moulded-ffp3-nr-d-valved-disposable-masks-p3-5-pack/246je" target="_blank">Screwfix →</a></div>
+        <div class="shop-price">~£8.99</div>
+      </div>
+      <div class="shop-item">
+        <div>Ear Defenders 27.6dB <a href="https://www.screwfix.com/p/ear-defenders-27-6db-snr/6191d" target="_blank">Screwfix →</a></div>
+        <div class="shop-price">~£5.99</div>
+      </div>
+      <div class="shop-item">
+        <div>Lightweight Sealed Safety Goggles <a href="https://www.screwfix.com/p/lightweight-safety-goggles/1142k" target="_blank">Screwfix →</a></div>
+        <div class="shop-price">~£3.99</div>
+      </div>
+      <div class="shop-item">
+        <div>Essentials Heavy Duty Rubble Sacks 30pk <a href="https://www.screwfix.com/p/essentials-heavy-duty-rubble-sacks-50ltr-30-pack/944gt" target="_blank">Screwfix →</a></div>
+        <div class="shop-price">£7.99</div>
+      </div>
+      <div class="shop-total">
+        <div>Stripping Kit Total</div>
+        <div class="shop-price">~£39</div>
+      </div>
+
+      <div style="margin-top:2rem;">
+        <div class="section-header" style="border-bottom-color:var(--stone-light);">
+          <h2 style="font-size:1.2rem;">French Drain Materials (estimated)</h2>
+        </div>
+        <div class="shop-item">
+          <div>Square guttering 4m</div>
+          <div class="shop-price">~£10–15</div>
+        </div>
+        <div class="shop-item">
+          <div>Joints, end cap, adapter</div>
+          <div class="shop-price">~£5–10</div>
+        </div>
+        <div class="shop-item">
+          <div>Geotextile membrane</div>
+          <div class="shop-price">~£10–15</div>
+        </div>
+        <div class="shop-item">
+          <div>20mm gravel (2 bulk bags)</div>
+          <div class="shop-price">~£50–80</div>
+        </div>
+        <div class="shop-item">
+          <div>Solid pipe for discharge</div>
+          <div class="shop-price">~£10–15</div>
+        </div>
+        <div class="shop-total">
+          <div>French Drain Total</div>
+          <div class="shop-price">~£85–135</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── SAFETY ─── -->
+    <div class="section" id="cottage-safety">
+      <div class="section-header">
+        <div class="section-icon" style="background:#fde8e8;color:var(--red-warn);">!</div>
+        <h2>Safety</h2>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card warning">
+          <h4>Always Wear</h4>
+          <ul>
+            <li><strong>FFP3 mask</strong> — silica dust causes silicosis. Not optional.</li>
+            <li><strong>Sealed goggles</strong> — cement chips are alkaline, cause chemical burns</li>
+            <li><strong>Ear defenders</strong> — SDS drill for hours damages hearing</li>
+            <li><strong>Heavy gloves</strong> — sharp cement and stone edges</li>
+          </ul>
+        </div>
+        <div class="info-card warning">
+          <h4>Structural Warning Signs — STOP work if you find:</h4>
+          <ul>
+            <li>Wall bulging outward 25mm+ over 1m run</li>
+            <li>Diagonal cracking through stonework (not just render)</li>
+            <li>Cracked or dropped lintels above openings</li>
+            <li>Wall feels hollow when tapped / stones move when pushed</li>
+            <li>New cracks appearing on internal walls while stripping</li>
+          </ul>
+        </div>
+        <div class="info-card warning">
+          <h4>Services</h4>
+          <ul>
+            <li>Check where electric supply enters building</li>
+            <li>Check gas meter location</li>
+            <li>Check phone/broadband cable entry</li>
+            <li>Use cable detector on wall before chiselling</li>
+            <li>Hit a live cable with SDS chisel = serious injury</li>
+          </ul>
+        </div>
+        <div class="info-card note">
+          <h4>Other Checks</h4>
+          <ul>
+            <li>Consider asbestos test on render (£20–30 lab test)</li>
+            <li>Check listed building / conservation area status</li>
+            <li>Pavement licence may be needed if debris could fall on public path</li>
+            <li>Cover windows with plywood/cardboard when chiselling nearby</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── TIPS ─── -->
+    <div class="section" id="cottage-tips">
+      <div class="section-header">
+        <div class="section-icon" style="background:var(--stone-pale);color:var(--dark-soft);">✦</div>
+        <h2>Tips &amp; Lessons Learned</h2>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card tip">
+          <h4>Render Stripping</h4>
+          <ul>
+            <li>Start from cracks — SDS chisel gets under the edge easily</li>
+            <li>Render peels away from under lintels — natural weak point</li>
+            <li>Work in sections, finish on natural break lines not straight edges</li>
+            <li>40mm flat chisel does 80% of the work</li>
+            <li>Use pry bar to lever off large sections once edges are loosened</li>
+            <li>Keep render rubble — usable as patio sub-base fill</li>
+          </ul>
+        </div>
+        <div class="info-card tip">
+          <h4>Lime vs Cement — Key Differences</h4>
+          <ul>
+            <li>Lime is stickier/more putty-like than cement</li>
+            <li>Much longer working time — hours, not minutes</li>
+            <li>Must stay damp to cure (opposite of cement)</li>
+            <li>Softer than stone — sacrificial layer, protects the stone</li>
+            <li>Flexes with building movement instead of cracking</li>
+            <li>Can't add water if it stiffens — rework by beating</li>
+          </ul>
+        </div>
+        <div class="info-card tip">
+          <h4>Stone Condition</h4>
+          <ul>
+            <li>Cracked stones: pack lime mortar into cracks, limewash over</li>
+            <li>Spalled faces: limewash will consolidate, or turn stone around</li>
+            <li>Drill holes from old fixings: fill with mortar</li>
+            <li>Brick packing pieces: leave in place, they're doing their job</li>
+            <li>Loose small stones: bed back in with lime mortar when repointing</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h4>Historical Reference</h4>
+          <ul>
+            <li>1890s photo shows cottage with limewash — fairly opaque white</li>
+            <li>1950s photo shows bare/limewashed stone, pre-cement render</li>
+            <li>Cement render likely applied 1960s–70s</li>
+            <li>Multiple neighbouring properties have exposed stone — confirms it suits the stone</li>
+            <li>Restoration puts cottage back to original appearance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /project-cottage -->
+
+  <!-- ═══════════════════════════════════════════════
+       PROJECT: LIVING ROOM RENOVATION
+  ════════════════════════════════════════════════ -->
+  <div class="project" id="project-living-room" hidden>
+
+    <!-- ─── ORDER OF WORK ─── -->
+    <div class="section" id="lr-order">
+      <div class="section-header">
+        <div class="section-icon" style="background:var(--amber-light);color:var(--amber);">▶</div>
+        <h2>Order of Work</h2>
+      </div>
+
+      <div class="work-order">
+        <div class="work-step active">
+          <div class="work-step-title">1. Survey &amp; planning</div>
+          <div class="work-step-desc">Damp survey, assess chimney breast, check for removal, plan layout and finishes.</div>
+        </div>
+        <div class="work-step">
+          <div class="work-step-title">2. Strip plaster from walls</div>
+          <div class="work-step-desc">Test for asbestos before stripping. Remove all existing plaster back to masonry.</div>
+        </div>
+        <div class="work-step">
+          <div class="work-step-title">3. Open fireplace</div>
+          <div class="work-step-desc">Sweep chimney, assess flue condition, remove blocking board or brick infill, assess lintel, form hearth.</div>
+        </div>
+        <div class="work-step">
+          <div class="work-step-title">4. Structural checks</div>
+          <div class="work-step-desc">Confirm lintel integrity over fireplace opening. Check any walls being altered for load-bearing status.</div>
+        </div>
+        <div class="work-step">
+          <div class="work-step-title">5. First fix &amp; prep</div>
+          <div class="work-step-desc">Electrics first fix, treat any damp, let walls dry before replastering.</div>
+        </div>
+        <div class="work-step">
+          <div class="work-step-title">6. Replaster</div>
+          <div class="work-step-desc">Lime plaster to match breathable wall system. Two coat work: scratch coat + finish coat.</div>
+        </div>
+        <div class="work-step">
+          <div class="work-step-title">7. Joinery &amp; fireplace surround</div>
+          <div class="work-step-desc">Fit architrave, skirting, window boards. Install fireplace surround and hearth.</div>
+        </div>
+        <div class="work-step">
+          <div class="work-step-title">8. Decorate</div>
+          <div class="work-step-desc">Allow lime plaster to fully carbonate (min 4 weeks) before painting.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── MILESTONES ─── -->
+    <div class="section" id="lr-milestones">
+      <div class="section-header">
+        <div class="section-icon" style="background:var(--stone-pale);color:var(--mortar);">◆</div>
+        <h2>Milestones &amp; Tasks</h2>
+      </div>
+
+      <!-- MILESTONE 1 -->
+      <div class="milestone open" onclick="this.classList.toggle('open')">
+        <div class="milestone-header">
+          <div class="milestone-number active">1</div>
+          <div class="milestone-title">Survey &amp; Planning</div>
+          <span class="milestone-status status-active">In Progress</span>
+          <div class="milestone-toggle">▾</div>
+        </div>
+        <div class="milestone-body" onclick="event.stopPropagation()">
+          <ul class="task-list">
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Commission damp survey</div>
+              <div class="task-note">Identify source before any replastering</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Check whether chimney breast has been removed in rooms above</div>
+              <div class="task-note">Critical — if so, the stack may be unsupported</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Have chimney swept and flue inspected</div>
+              <div class="task-note">Check for obstructions, condition of flue lining</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Agree layout and finishes</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Get quotes for electrics first fix</div></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- MILESTONE 2 -->
+      <div class="milestone" onclick="this.classList.toggle('open')">
+        <div class="milestone-header">
+          <div class="milestone-number">2</div>
+          <div class="milestone-title">Strip Plaster</div>
+          <span class="milestone-status status-pending">Pending</span>
+          <div class="milestone-toggle">▾</div>
+        </div>
+        <div class="milestone-body" onclick="event.stopPropagation()">
+          <ul class="task-list">
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Test plaster sample for asbestos before stripping</div>
+              <div class="task-note">Artex and some older plasters can contain asbestos — essential check</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Isolate electrics to room before stripping</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Strip all plaster back to masonry — all walls</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Check masonry behind for damp, salts, condition</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Clear all rubble and plaster debris</div></div>
+            </li>
+          </ul>
+
+          <div class="info-grid" style="margin-top:1.2rem;">
+            <div class="info-card warning">
+              <h4>Before stripping — check for</h4>
+              <ul>
+                <li>Hidden cables running through plaster — use detector</li>
+                <li>Asbestos in Artex ceilings or textured finishes</li>
+                <li>Lead paint on any woodwork nearby</li>
+                <li>Service entry points into the room</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MILESTONE 3 -->
+      <div class="milestone" onclick="this.classList.toggle('open')">
+        <div class="milestone-header">
+          <div class="milestone-number">3</div>
+          <div class="milestone-title">Open Fireplace</div>
+          <span class="milestone-status status-pending">Pending</span>
+          <div class="milestone-toggle">▾</div>
+        </div>
+        <div class="milestone-body" onclick="event.stopPropagation()">
+          <ul class="task-list">
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Confirm chimney is swept and inspected before opening</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Assess lintel above fireplace opening</div>
+              <div class="task-note">Check for cracks, sagging — structural engineer if in doubt</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Remove blocking board, brick infill, or register plate</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Check depth and width of fireplace opening — compare to building regs for open fire</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Form or reinstate hearth — minimum dimensions required</div>
+              <div class="task-note">Building Regs Part J: hearth must extend min 500mm in front and 150mm each side of opening</div></div>
+            </li>
+            <li class="task">
+              <div class="task-check"></div>
+              <div><div class="task-text">Smoke test fireplace before fitting surround</div></div>
+            </li>
+          </ul>
+
+          <div class="info-grid" style="margin-top:1.2rem;">
+            <div class="info-card note">
+              <h4>Chimney &amp; Fireplace Notes</h4>
+              <ul>
+                <li>Flue must be swept before any fire is lit</li>
+                <li>Flue liner may be required for solid fuel — check with HETAS installer</li>
+                <li>CO detector required in rooms with solid fuel appliances</li>
+                <li>Notify Building Control if installing new appliance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── SHOPPING LIST ─── -->
+    <div class="section" id="lr-shopping">
+      <div class="section-header">
+        <div class="section-icon" style="background:var(--green-light);color:var(--green-done);">£</div>
+        <h2>Shopping List</h2>
+      </div>
+
+      <div class="info-card note" style="margin-bottom:1rem;">
+        <h4>To be populated</h4>
+        <p>Shopping list will be built out once survey is complete and scope is confirmed.</p>
+      </div>
+    </div>
+
+    <!-- ─── SAFETY ─── -->
+    <div class="section" id="lr-safety">
+      <div class="section-header">
+        <div class="section-icon" style="background:#fde8e8;color:var(--red-warn);">!</div>
+        <h2>Safety</h2>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card warning">
+          <h4>Always Wear When Stripping</h4>
+          <ul>
+            <li><strong>FFP3 mask</strong> — old plaster dust can contain silica and other hazards</li>
+            <li><strong>Sealed goggles</strong> — plaster debris</li>
+            <li><strong>Ear defenders</strong> — SDS work</li>
+            <li><strong>Heavy gloves</strong> — sharp edges, lime burns from old plaster</li>
+          </ul>
+        </div>
+        <div class="info-card warning">
+          <h4>Asbestos — Essential Check</h4>
+          <ul>
+            <li>Artex (textured coatings) pre-2000 may contain chrysotile asbestos</li>
+            <li>Some older plasters and adhesives also contain it</li>
+            <li>Send sample to accredited lab before disturbing — £20–40</li>
+            <li>If positive, use licensed contractor for removal</li>
+            <li>Do NOT dry-sand or mechanically strip if asbestos suspected</li>
+          </ul>
+        </div>
+        <div class="info-card warning">
+          <h4>Hidden Services</h4>
+          <ul>
+            <li>Use cable/pipe detector before any SDS work on walls</li>
+            <li>Isolate electrics to the room at consumer unit before stripping</li>
+            <li>Mark known cable routes before starting</li>
+            <li>Gas pipes in walls are rare but possible in older properties</li>
+          </ul>
+        </div>
+        <div class="info-card warning">
+          <h4>Structural</h4>
+          <ul>
+            <li>Do not remove or alter any wall without confirming it is non-load-bearing</li>
+            <li>Chimney breast removal above requires steel support — consult engineer</li>
+            <li>STOP if you see diagonal cracking through masonry, not just plaster</li>
+            <li>Get structural engineer sign-off on lintel before opening fireplace if in doubt</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /project-living-room -->
+
+</div><!-- /main -->
+
+<!-- ═══ FOOTER ═══ -->
+<div class="footer">
+  Project Reference · Last updated: Feb 2026 · Edit this file to update tasks and progress
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
