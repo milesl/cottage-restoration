@@ -1,1 +1,25 @@
-{\n  "short_name": "Cottage Restoration",\n  "name": "Cottage Restoration App",\n  "icons": [\n    {\n      "src": "icons/icon-192.svg",\n      "sizes": "192x192",\n      "type": "image/svg+xml"\n    },\n    {\n      "src": "icons/icon-512.svg",\n      "sizes": "512x512",\n      "type": "image/svg+xml"\n    }\n  ],\n  "start_url": ".",\n  "display": "standalone",\n  "background_color": "#ffffff",\n  "theme_color": "#ffffff",\n  "description": "A PWA for restoring cottages."\n}
+{
+  "name": "Cottage Restoration Tracker",
+  "short_name": "Cottage",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#faf8f3",
+  "theme_color": "#2c2418",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
